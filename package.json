@@ -1,16 +1,11 @@
 {
   "author": "Dan Kantor <dan@ex.fm>",
   "name": "local-storage-json",
-  "description": "",
-  "version": "0.0.1",
+  "description": "Simple wrapper on localStorage to store JSON",
+  "version": "1.0.0",
   "homepage": "https://github.com/dankantor/local-storage-json",
   "repository": {
     "type": "git",
     "url": "git://github.com/dankantor/local-storage-json.git"
-  },
-  "dependencies": {},
-  "optionalDependencies": {},
-  "engines": {
-    "node": "*"
   }
 }
