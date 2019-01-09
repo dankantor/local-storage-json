@@ -5,15 +5,18 @@ Simple wrapper on localStorage to store JSON
 
 ## Install
 
-    npm install local-storage-json
+```
+npm install local-storage-json
+```
 
 
 ## Usage
 
-    var storage = require('local-storage-json');
-    storage.get(key);
-    storage.set(key, json);
-    storage.remove(key);
-    storage.clear();
+```
+const lStorage = require('local-storage-json');
     
-    $(window).addEventListener('storageQuotaExceeded', fn, false);
+lStorage.get(key);
+lStorage.set(key, obj);
+lStorage.remove(key);
+lStorage.clear();
+```
