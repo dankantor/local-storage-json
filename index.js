@@ -1,16 +1,51 @@
 module.exports.get = function(key){
-  return JSON.parse(localStorage.getItem(key));
+  if (localStorage) {
+    try {
+      return JSON.parse(localStorage.getItem(key));
+    } catch (err) {
+      return null;
+    }
+  } else {
+    return null;
+  }
 };
 
 module.exports.set = function(key, value){
-  localStorage.setItem(key, JSON.stringify(value));
+  if (localStorage) {
+    try {
+      var val = JSON.stringify(value);
+      localStorage.setItem(key, val);
+      return val;
+    } catch (err) {
+      return null;
+    }
+  } else {
+    return null;
+  }
 };
 
 module.exports.remove = function(key){
-  localStorage.removeItem(key);
+  if (localStorage) {
+    try {
+      localStorage.removeItem(key);
+      return true;
+    } catch (err) {
+      return null;
+    }
+  } else {
+    return null;
+  }
 };
 
 module.exports.clear = function(){
-  localStorage.clear();
+  if (localStorage) {
+    try {
+      localStorage.clear();
+      return true;
+    } catch (err) {
+      return null;
+    }
+  } else {
+    return null;
+  }
 };
-

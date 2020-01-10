@@ -2,7 +2,7 @@
   "author": "Dan Kantor <dan@ex.fm>",
   "name": "local-storage-json",
   "description": "Simple wrapper on localStorage to store JSON",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "homepage": "https://github.com/dankantor/local-storage-json",
   "repository": {
     "type": "git",
