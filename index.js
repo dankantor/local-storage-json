@@ -1,5 +1,4 @@
 module.exports.get = function(key){
-  console.log('get');
   if (localStorage) {
     try {
       return JSON.parse(localStorage.getItem(key));
@@ -12,7 +11,6 @@ module.exports.get = function(key){
 };
 
 module.exports.set = function(key, value){
-  console.log('set');
   if (localStorage) {
     try {
       var val = JSON.stringify(value);
@@ -27,7 +25,6 @@ module.exports.set = function(key, value){
 };
 
 module.exports.remove = function(key){
-  console.log('remove');
   if (localStorage) {
     try {
       localStorage.removeItem(key);
@@ -41,7 +38,6 @@ module.exports.remove = function(key){
 };
 
 module.exports.clear = function(){
-  console.log('clear');
   if (localStorage) {
     try {
       localStorage.clear();
